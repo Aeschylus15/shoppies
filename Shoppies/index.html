@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>The Shoppies</h1>
+    <br />
+
+    <!-- Contains search box -->
+    <div style="max-width:400px;margin:auto">
+        <div class="input-icons">
+            <i class="fas fa-search fa-2x icon "></i>
+            <input class="input-field" type="text" id="movie_name" placeholder="Movie">
+        </div>
+    </div> <!--  end of search box div -->
+
+    <br>
+
+    <!-- Contains both results and nominations -->
+    <div class="container">
+      <div class="row">
+          <div class="col">
+            <h3 id="search_input">Results for ""</h3>
+            <br>
+            <ul>
+              <!-- Contains results -->
+              <div id="movie">
+
+              </div> <!-- end of results div -->
+            </ul>
+          </div>
+
+          <div class="col" id="push_right">
+            <h3>Nominations</h3>
+            <br>
+            <ul>
+              <!-- Contains nominations -->
+              <div id="nominations">
+
+              </div> <!-- end of nominations div -->
+            </ul>
+          </div>
+      </div>
+    </div> <!--end of results and nominations div -->
+
+    <script src="shoppies.js"></script>
+  </body>
+</html>
