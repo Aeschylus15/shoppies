@@ -14,7 +14,7 @@ window.addEventListener("load", function() {
     document.getElementById("search_input").innerHTML = "<h3>Results for &quot"+movieTitle+"&quot</h3>";
     document.getElementById("movie").innerHTML = "";
 
-    fetch("http://www.omdbapi.com/?apikey=2309d7e9&s="+movieTitle)
+    fetch("https://www.omdbapi.com/?apikey=2309d7e9&s="+movieTitle)
       .then(response => response.text())
       .then(success)
       .catch(error => console.log('error', error));
@@ -50,7 +50,7 @@ window.addEventListener("load", function() {
         if(nominatedImdbIdArray.length < 5) {
           this.disabled = true; // disables the nominate button
 
-          fetch("http://www.omdbapi.com/?apikey=2309d7e9&i="+imdbId1)
+          fetch("https://www.omdbapi.com/?apikey=2309d7e9&i="+imdbId1)
             .then(response => response.text())
             .then(success1)
             .catch(error => console.log('error', error));
